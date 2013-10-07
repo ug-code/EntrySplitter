@@ -15,7 +15,7 @@ class EntrySplitter
      * 
      * return value array of split text or html
      */
-    function split ($str, $limit = 100, $option = 0) {
+    function split ($string, $limit = 100, $option = 0) {
         $str = str_replace(array("?r?n", "?r"), "?n", $str);
         $temp = preg_split("/(<?\/[^>]+>)(<[^>]+>)|(<?img[^>]+>)/s", $str, -1, PREG_SPLIT_DELIM_CAPTURE);
 
